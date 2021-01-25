@@ -80,6 +80,15 @@
 
                     </ul>
 
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign Up <i class="bi bi-person-fill"></i> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login <i class="bi bi-box-arrow-in-right"></i></a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
@@ -101,34 +110,37 @@
             <img class="cont-img" src="images/cont7.svg" alt="hire-img">
         </div>
 
-        <form>
+        <div>
 
-            <div class="form-row align-items-center">
-                <div class="col-sm-2 my-5">
-                    <label class="sr-only" for="inlineFormInputName">Name</label>
-                    <input type="text" class="form-control" id="inlineFormInputName"
-                        placeholder="Job Title or Company Name">
-                </div>
+            <form>
+
+                <div class="form-row align-items-center">
+                    <div class="col-sm-2 my-5">
+                        <label class="sr-only" for="inlineFormInputName">Name</label>
+                        <input type="text" class="form-control" id="inlineFormInputName"
+                            placeholder="Job Title or Company Name">
+                    </div>
 
 
-                <div class="col-sm-2 my-5">
-                    <label class="sr-only" for="inlineFormInputGroupUsername">Location</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername"
-                            placeholder="Location">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="bi bi-geo-alt"></i></div>
+                    <div class="col-sm-2 my-5">
+                        <label class="sr-only" for="inlineFormInputGroupUsername">Location</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="Location">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="bi bi-geo-alt"></i></div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-auto my-1">
+                        <button type="button" class=" btn btn-outline-secondary  btn  btn-lg btn btn-outline-dark"
+                            data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi bi-search"></i>
+                            Search
+                        </button>
+                    </div>
                 </div>
-                <div class="col-auto my-1">
-                    <button type="button" class=" btn btn-outline-secondary  btn  btn-lg btn btn-outline-dark"
-                        data-toggle="button" aria-pressed="false" autocomplete="off"><i class="bi bi-search"></i>
-                        Search
-                    </button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
 
@@ -140,10 +152,201 @@
             <h3>Browse Categories</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-        
-        <div class="job-container">
-
+        <!-- <div class="browse-cat">
+            <table border=1 width=500 cellpadding=50>
+                <tr>
+                  <td>
+                    <p>I'm text in a cell.</p>
+                  </td>
+                  <td>
+                    <p>I'm text in a cell.</p>
+                  </td>
+                  <td>
+                    <p>I'm text in a cell.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>I'm text in a cell.</p>
+                  </td>
+                  <td>
+                    <p>I'm text in a cell.</p>
+                  </td>
+                  <td>
+                    <p>I'm text in a cell.</p>
+                  </td>
+                </tr>
+              </table>
         </div>
+         -->
+
+        <!-- <div class="card-group">
+            <div class="card">
+              <img src="images/tech.png" class="card-img-top" alt="technology">
+              <div class="card-body">
+                <h5 class="card-title">Technology</h5>
+                <p class="card-text text-muted">(5000 Jobs)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/tech.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Science</h5>
+                <p class="card-text">(5000 Jobs)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/tech.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Finance</h5>
+                <p class="card-text">(5000 Jobs)</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div> -->
+
+          <section id="facilities">
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/tech.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 1</h4>
+                                <p>(5000 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/healthcare.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 2</h4>
+                                <p>(2500 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/finance.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 3</h4>
+                                <p>(3580 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/sci.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 4</h4>
+                                <p>(1680 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/arts.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 5</h4>
+                                <p>(1580 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/sci.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 6</h4>
+                                <p>(620 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/healthcare.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 7</h4>
+                                <p>(1420 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-3">
+                        <div class="card text-center">
+                            <img src="images/tech.png" class="card-img-top">
+                            <div class="card-body">
+                                <h4>Job Category 8</h4>
+                                <p>(410 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+        
+
+                </div>
+              </div>
+          </section>
+        <!-- <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/tech.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Technology</h5>
+                        <p>(5000 Jobs)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/healthcare.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Healthcare</h5>
+                        <p>(385 Jobs)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <img src="images/finance.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Finance</h5>
+                        <p>(458 Jobs)</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

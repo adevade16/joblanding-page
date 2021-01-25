@@ -92,11 +92,57 @@ hr {
 
   .middle-container{
     margin: 5px 0;
+    background-color: #fafafa;
+    
   }
 
   .mc-title{
       margin:5px 50px;
       padding-top: 10px;
       text-align: center;
-      height: 500px;
+      height: 100px;
   }
+
+  .browse-cat{
+    width: 30%;
+   margin:50px auto;
+     
+      
+  }
+
+  .card-group{
+    width: 30%;
+    margin:50px auto;
+    height: 50px;
+  }
+
+  .card-img-top{
+      padding: 50px;
+  }
+
+
+  /* started */
+  #facilities{
+      padding: 40px 0;
+  }
+
+.card-body{
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
+}
+
+.card{
+    margin:20px 10px;
+}
+
+.card-body a{
+    color:#433d3c;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: auto;
+    font-weight:500;
+}
+.card-body a:hover{
+    /* color: #999b84; */
+    text-decoration: none;
+    color: #99b898;
+}
