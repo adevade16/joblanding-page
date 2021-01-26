@@ -146,3 +146,18 @@ hr {
     text-decoration: none;
     color: #99b898;
 }
+
+/* Latest Jobs */
+
+.skill-class {
+    width: 50%;
+    margin: 25px auto 100px auto;
+    text-align: left;
+    /* line-height: 1.5; */
+  }
+
+  .ui-img {
+    width: 35%;
+    float: right;
+    margin-left: 30px;
+  }
