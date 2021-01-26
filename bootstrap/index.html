@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,13 +15,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Karla&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap" rel="stylesheet">
+    
     <link href="style.css" rel="stylesheet" />
+    
 </head>
 
 <body>
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images\logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
@@ -37,9 +40,9 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
-                    </li> -->
+                    </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
@@ -92,27 +95,85 @@
                 </div>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-briefcase fa-2x" width="30" height="30" class="d-inline-block align-top" alt=""></i> 
+            Job Search
+          </a>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item active">
+                    <a class="nav-link m-3 mr-sm-2" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  m-3 mr-sm-2" href="#About-Us">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  m-3 mr-sm-2 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jobs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Item One</a>
+                        <div class="dropdown-divider"></div> 
+                        <a class="dropdown-item" href="#">Item Two</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Item Three</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  m-3 mr-sm-2 dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Companies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Latest</a>
+                        <div class="dropdown-divider"></div> 
+                        <a class="dropdown-item" href="#">Item Two</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Item Three</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-success m-3 mr-sm-2" type="submit">Sign In</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-success m-3 mr-sm-2" type="submit">Sign Up</button>
+                </li>
+            </ul>
+
+        </div>
     </nav>
+
+
 
 
     <!-- Top Container -->
     <div class="float-container">
-
-        <div class="float-child">
-            <h2>Find the </h2>
-            <h2> job that fits you</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.</p>
-        </div>
-
-        <div class="float-child">
-            <img class="cont-img" src="images/cont7.svg" alt="hire-img">
+        <div class="row">
+            <div class="col-sm">
+                <div class="">
+                    <h2>Find the </h2>
+                    <h2> job that fits you</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="">
+                    <img class="cont-img" src="images/cont7.svg" alt="hire-img">
+                </div>
+            </div>
         </div>
 
         <div>
 
-            <form>
+            <form class="center">
 
                 <div class="form-row align-items-center">
                     <div class="col-sm-2 my-5">
@@ -128,7 +189,8 @@
                             <input type="text" class="form-control" id="inlineFormInputGroupUsername"
                                 placeholder="Location">
                             <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="bi bi-geo-alt"></i></div>
+                                <div class="input-group-text" style="border-radius: 0 25px 25px 0"><i
+                                        class="bi bi-geo-alt"></i></div>
                             </div>
                         </div>
                     </div>
@@ -155,74 +217,86 @@
         <section id="facilities">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card text-center">
-                            <img src="images/tech.png" class="card-img-top">
+                            
                             <div class="card-body">
-                                <h4>Job Category 1</h4>
+                                <i class="fas fa-laptop-code fa-5x"></i>
+                                <hr>
+                                <h4>Technology</h4>
                                 <p>(5000 Jobs)</p>
                                 <a href="#">See Jobs</a>
                             </div>
+
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card text-center">
-                            <img src="images/healthcare.png" class="card-img-top">
+
                             <div class="card-body">
-                                <h4>Job Category 2</h4>
-                                <p>(2500 Jobs)</p>
+                                <i class="fas fa-stethoscope fa-5x"></i>
+                                <hr>
+                                <h4>Healthcare</h4>
+                                <p>(2530 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-hand-holding-usd fa-5x"></i>
+                                <hr>
+                                <h4>Finance</h4>
+                                <p>(1620 Jobs)</p>
+                                <a href="#">See Jobs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-microscope fa-5x"></i>
+                                <hr>
+                                <h4>Science</h4>
+                                <p>(985 Jobs)</p>
                                 <a href="#">See Jobs</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card text-center">
-                            <img src="images/finance.png" class="card-img-top">
                             <div class="card-body">
-                                <h4>Job Category 3</h4>
-                                <p>(3580 Jobs)</p>
+                                <i class="fas fa-palette fa-5x"></i>
+                                <hr>
+                                <h4>Arts</h4>
+                                <p>(1420 Jobs)</p>
                                 <a href="#">See Jobs</a>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card text-center">
-                            <img src="images/sci.png" class="card-img-top">
                             <div class="card-body">
-                                <h4>Job Category 4</h4>
-                                <p>(1680 Jobs)</p>
+                                <i class="fas fa-university fa-5x"></i>
+                                <hr>
+                                <h4>Education</h4>
+                                <p>(3201 Jobs)</p>
                                 <a href="#">See Jobs</a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <img src="images/arts.png" class="card-img-top">
-                            <div class="card-body">
-                                <h4>Job Category 5</h4>
-                                <p>(1580 Jobs)</p>
-                                <a href="#">See Jobs</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card text-center">
-                            <img src="images/sci.png" class="card-img-top">
-                            <div class="card-body">
-                                <h4>Job Category 6</h4>
-                                <p>(620 Jobs)</p>
-                                <a href="#">See Jobs</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
+                <!-- <div class="col-md-3">
                         <div class="card text-center">
                             <img src="images/healthcare.png" class="card-img-top">
                             <div class="card-body">
@@ -231,10 +305,10 @@
                                 <a href="#">See Jobs</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="col-md-3">
+                <!-- <div class="col-sm-3">
                         <div class="card text-center">
                             <img src="images/tech.png" class="card-img-top">
                             <div class="card-body">
@@ -243,35 +317,303 @@
                                 <a href="#">See Jobs</a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
             </div>
-        </section>
+
+    </section>
     </div>
 
     <hr>
 
     <!-- Latest Jobs -->
-    
+    <div class="middle-container">
+        <div class="mc-title">
+            <h3>Latest Jobs</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <section id="facilities"></section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div id="latest-jobs">
-        <div class="skill-class">
-            <img class="ui-img" src="images/t1.jpg" alt="ui-img">
-            <h4>Job Title 1</h4>
-            <h5>Company Name</h5>
-            <p>Location</p>
-          </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/t2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Job Title</h5>
+                            <h6 class="card-title">Company Name</h6>
+                            <p class="card-text">Location</p>
+                            <a href="#" class="btn btn-success">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+
+    <hr>
+
+
+    <!-- About Us -->
+    <div id="About-Us" class="about-us">
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="">
+                    <img class="cont-img" src="images/au.svg" alt="hire-img">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="">
+                    <h2>About Us</h2>
+
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <hr>
+
+   <!-- Footer -->
+   <footer class="footer-section">
+    <div class="container">
+        <!-- <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>101-ABC,Thane,Maharashtra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>123456789</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <!-- <div class="footer-logo">
+                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                        </div> -->
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Link One</a></li>
+                            <li><a href="#">Link Two</a></li>
+                            <li><a href="#">Link Three</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>101-ABC,Thane,Maharashtra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>123456789</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>mail@info.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
